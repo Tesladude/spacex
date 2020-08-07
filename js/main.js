@@ -12,3 +12,5 @@ var instance = new vidbg('.video', {
   if(document.body.clientWidth<580 ){
      rellax.destroy();
   }
+  
+AOS.init();

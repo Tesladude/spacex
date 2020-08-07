@@ -6,11 +6,12 @@
     <title>spaceX official web page</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/vidbg.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="./img/logo.svg" alt="logo" class="logo">
+    <header class="header" data-aos="fade-down">
+        <img src="./img/logo.svg" alt="logo" class="logo" >
         <nav class="main-nav">
             <ul class="list">
                 <li class="item">
@@ -41,14 +42,14 @@
             </ul>
         </nav>
     </header>
-    <section class="main">
-        <h1 class="title">Falcon Heavy</h1>
+    <section class="main" data-aos="fade-up" data-aos-delay="500">
+        <h1 class="title" >Falcon Heavy</h1>
         <p class="description">The most powerful operational rocket in the world by a factor of two</p>
     </section>
-    <div class="video"></div>
-    <section class="features">
-        <h2 class="feature-title">Falcon Heavy <br/>Overview</h2>
-        <table class="table">
+    <div class="video" data-aos="fade-down" data-aos-delay="700"></div>
+    <section class="features" >
+        <h2 class="feature-title" data-aos="zoom-out-left">Falcon Heavy <br/>Overview</h2>
+        <table class="table" data-aos="zoom-out-right">
             <tr>
                 <td class="table-column">HEIGHT</td>
                 <td class="table-column">70 m / 229.6 ft</td>
@@ -75,13 +76,13 @@
             </tr>
         </table>
         <img src="./img/falcon-heavy.png" alt="rocket" class="rocket"data-rellax-speed="7">
-        <h2 class="features-title">UNMATCHED<br/> PERFORMANCE</h2>
-        <p class="features-text">With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the most capable rocket flying.
+        <h2 class="features-title" data-aos="zoom-out-left">UNMATCHED<br/> PERFORMANCE</h2>
+        <p class="features-text" data-aos="zoom-out-left">With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the most capable rocket flying.
              By comparison, the liftoff thrust of the Falcon Heavy equals approximately eighteen 747 aircraft at full power.
               Falcon Heavy can lift the equivalent of a fully loaded 737 jetliner—complete with passengers, luggage and fuel—to orbit.
         </p>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="flip-right">
         <img src="./img/logo.svg" alt="logo">
         <nav class="footer-nav">
             <ul class="list">
@@ -101,6 +102,7 @@
     </footer>
     <script src="js/vidbg.js"></script>
     <script src="js/rellax.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
